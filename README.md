@@ -2,6 +2,8 @@
 
 > **Living documentation** for Microsoft Fabric workspace `EnterpriseData-Dev` (Ashley Furniture). Generated from a comprehensive scan capturing all 71 items, 192 stored procedures, 145 views, 412 shortcuts, 412 GUIDs cross-referenced, and full code bodies.
 
+## 🚀 New here? Start with [ONBOARDING.md](ONBOARDING.md) — 10-minute orientation.
+
 ## 📌 Workspace identity
 
 | Field | Value |
