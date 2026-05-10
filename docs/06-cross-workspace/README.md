@@ -55,7 +55,9 @@ flowchart LR
 
 - [PROD dependencies](prod-dependencies.md) — 18 OneLake shortcuts + PROD inventory
 - [ADLS storage](adls-storage.md) — 9 ADLS Gen2 shortcuts to `ashleydevlake`
-- [Inaccessible references](inaccessible-refs.md) — workspaces and items I couldn't read
+- [Inaccessible references]
+- [🔌 Connections (12)](connections.md) — data sources (SharePoint, SQL, Lakehouse)
+(inaccessible-refs.md) — workspaces and items I couldn't read
 
 ## Summary
 

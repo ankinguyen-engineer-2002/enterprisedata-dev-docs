@@ -19,6 +19,24 @@ TARGETS = [
 ]
 
 # Standalone diagrams (not from a doc)
+DEPGRAPH_DOC = REPO / "docs/05-data-flow/dependency-graphs.md"
+
+# Add specific diagram extractions
+def extract_nth_mermaid(md_path: Path, n=0):
+    if not md_path.exists():
+        return None
+    txt = md_path.read_text()
+    blocks = re.findall(r"```mermaid\n(.*?)\n```", txt, re.DOTALL)
+    return blocks[n] if n < len(blocks) else None
+
+
+# Extract the 3 dependency graphs from dependency-graphs.md
+DEPGRAPH_TARGETS = [
+    ("10-proc-call-graph", DEPGRAPH_DOC, 0),
+    ("11-pipeline-proc-edges", DEPGRAPH_DOC, 1),
+    ("12-table-hot-graph", DEPGRAPH_DOC, 2),
+]
+
 EXTRA = {
     "05-data-flow": """flowchart LR
     classDef src fill:#e8f4fd,stroke:#3a8;
@@ -140,6 +158,13 @@ def main():
         render(name, mmd)
     for name, mmd in EXTRA.items():
         render(name, mmd)
+    # Dependency graphs from generated md
+    for out_name, src_path, idx in DEPGRAPH_TARGETS:
+        m = extract_nth_mermaid(src_path, idx)
+        if m:
+            render(out_name, m)
+        else:
+            print(f"  ⚠️ no mermaid #{idx} in {src_path.name}")
 
 
 if __name__ == "__main__":

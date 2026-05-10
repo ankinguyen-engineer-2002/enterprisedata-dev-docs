@@ -28,6 +28,10 @@ graph TB
 ```
 
 ## 📑 Sub-pages
+## 🔬 Detail pages
+- [⚙️ Per-proc narrative pages (60)](procs/README.md) — top stored procedures with inputs/outputs/code
+
+
 
 - [⚙️ Stored Procedures](stored-procs.md) — 192 procs grouped by family
 - [👁️ Views](views.md) — 145 user views (mostly `_Wrk` working sets)

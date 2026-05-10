@@ -138,6 +138,23 @@ EnterpriseData-Dev-Docs/
 
 ## 🔧 Regenerate
 
+## 🔬 NEW: Detail layer (v2 — added 2026-05-10)
+
+The repo now ships **per-item deep-dive pages** beyond the high-level overview:
+
+| Detail layer | Pages | Description |
+|---|---:|---|
+| [📜 Per-pipeline walkthroughs](docs/04-orchestration/pipelines/README.md) | 22 | Activity tree + source/sink mapping + parameters + run history per pipeline |
+| [⚙️ Per-proc narrative](docs/03-logic/procs/README.md) | 60 | Inputs/outputs detected, narrative explanation, code excerpt for top procs |
+| [🔍 Per-table lineage](docs/05-data-flow/tables/README.md) | 50 | Top tables with writers/readers + Mermaid lineage subgraph |
+| [🕸️ Dependency graphs](docs/05-data-flow/dependency-graphs.md) | 1 | Proc call graph + pipeline→proc edges |
+| [🔌 Connections](docs/06-cross-workspace/connections.md) | 1 | 12 data sources (SharePoint, SQL, Lakehouse) |
+| [⚙️ Workspace settings](docs/08-operations/workspace-settings.md) | 1 | Spark settings + capacity + folders |
+
+> **Navigate top-down:** start with [01-introduction.md](docs/01-introduction.md), drill via category READMEs, end at detail pages above.
+
+
+
 ```bash
 # Re-scan the workspace (~30 minutes)
 python3 scripts/_scan_lakehouses.py

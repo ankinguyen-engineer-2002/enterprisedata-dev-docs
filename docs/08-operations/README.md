@@ -34,6 +34,8 @@ All other 38 orchestration items have no recent run history. See [run-history.md
 
 - [Run history](run-history.md) — full per-item run breakdown
 - [Monitoring](monitoring.md) — `Source_EDW_Check_Test` daily + alert pipelines
-- [Environments](environments.md) — Spark configs detail
+- [Environments](environments.md)
+- [⚙️ Workspace settings](workspace-settings.md) — Spark + capacity + folders
+ — Spark configs detail
 
 ---

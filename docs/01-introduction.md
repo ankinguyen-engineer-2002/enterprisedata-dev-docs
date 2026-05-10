@@ -95,3 +95,20 @@ Full glossary including **Ashley Furniture domain terms** (UKG, AFI, Maximo, ADS
 ---
 
 **Next:** [📦 02 — Storage Layer](02-storage/README.md)
+
+
+## 🔄 Git integration (Azure DevOps)
+
+The workspace is **`ConnectedAndInitialized`** to Azure DevOps:
+
+| Field | Value |
+|---|---|
+| Provider | `AzureDevOps` |
+| Organization | `ashleyfurniture` |
+| Project | `Enterprise Data Services` |
+| Repository | `Fabric-EnterpriseData` |
+| Branch | `main` |
+| Directory | `/` |
+| Sync state | `ConnectedAndInitialized` |
+
+→ **The Azure DevOps repo is the source of truth.** Changes to items in this workspace should flow through Git PRs in `ashleyfurniture/Enterprise Data Services/Fabric-EnterpriseData`. Direct UI edits without git commit will desync.

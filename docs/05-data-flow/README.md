@@ -105,6 +105,11 @@ flowchart LR
 7. **Audit trail** — in `ETL_Framework.DW_Developer.AuditLog`. SLA breaches & data-feed failures land in `Performance_Logs.EmailQueue` and emailed via Office365 Logic App.
 
 ## Per-leg pages
+## 🔬 Detail pages
+- [🔍 Per-table lineage (50)](tables/README.md) — top tables with writers/readers/Mermaid
+- [🕸️ Dependency graphs](dependency-graphs.md) — proc call graph + pipeline→proc edges
+
+
 
 - [Source → Bronze](source-to-bronze.md) — how raw data lands in `Source_Data`
 - [Bronze → Silver](bronze-to-silver.md) — how `usp_RefreshCuratedTableFromView` populates domain WHs

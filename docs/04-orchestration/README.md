@@ -39,6 +39,10 @@ flowchart TB
 ```
 
 ## 📑 Sub-pages
+## 🔬 Detail pages
+- [📜 Per-pipeline walkthroughs (22)](pipelines/README.md) — activity-by-activity per pipeline
+
+
 
 - [🔁 Pipelines (22)](pipelines.md) — categorized + run status
 - [🪞 Mirror (Databricks UC `edw_dev`)](mirror.md)
