@@ -1,0 +1,22 @@
+# Raw scan data — contains plaintext secret in notebooks/MetaData-Pull.py
+# (SP secret pending rotation as of scan date 2026-05-08)
+# These are local-only artifacts, not for public sharing
+data/
+_archive/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editors
+.vscode/
+.idea/
+*.swp
+
+# Temp
+*.tmp
+*.log
